@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_play"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/player_layout"
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_height="wrap_content">
+
+        <com.ezvizuikit.open.EZUIPlayer
+            android:id="@+id/player_ui"
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:visibility="visible"
+            android:layout_height="wrap_content"/>
+
+        <com.ezvizuikit.open.EZUIPlayer
+            android:id="@+id/player_ui2"
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/player_layout"
+        android:background="#ff888888">
+
+        <Button
+            android:id="@+id/btn_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textColor="#FFFFFFFF"
+            android:background="#66000000"
+            android:text="switch play"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+</RelativeLayout>
